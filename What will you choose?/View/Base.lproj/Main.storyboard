@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_will_you_choose_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Дизайн без названия-4" translatesAutoresizingMaskIntoConstraints="NO" id="x0R-12-MzS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-fF-nzS">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLe-Da-BTe">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="578"/>
+                                        <fontDescription key="fontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="23"/>
+                                        <color key="textColor" red="0.17114282032800099" green="0.12134385819035201" blue="0.066730838749499435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whX-tP-MdL">
+                                        <rect key="frame" x="0.0" y="598" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1IK-Pb-sUX"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.091243521879999998" green="0.010754167049999999" blue="0.00029129380130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Choice1" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.091243521879999998" green="0.010754167049999999" blue="0.00029129380130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qlP-O1-DEn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3i-3a-jyB">
+                                        <rect key="frame" x="0.0" y="718" width="374" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="9Va-Th-m9d"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.091243521877066747" green="0.010754167052409015" blue="0.0002912938013344449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Choice2" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="Kailasa-Bold" family="Kailasa" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.091243521879999998" green="0.010754167049999999" blue="0.00029129380130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBb-ym-WFc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CLe-Da-BTe" firstAttribute="leading" secondItem="6bq-fF-nzS" secondAttribute="leading" id="3jG-aS-vg8"/>
+                                    <constraint firstItem="whX-tP-MdL" firstAttribute="leading" secondItem="6bq-fF-nzS" secondAttribute="leading" id="4tJ-mY-xfb"/>
+                                    <constraint firstAttribute="trailing" secondItem="CLe-Da-BTe" secondAttribute="trailing" id="Hof-1H-3sb"/>
+                                    <constraint firstItem="x3i-3a-jyB" firstAttribute="leading" secondItem="6bq-fF-nzS" secondAttribute="leading" id="JAu-kc-aoV"/>
+                                    <constraint firstItem="CLe-Da-BTe" firstAttribute="top" secondItem="6bq-fF-nzS" secondAttribute="top" id="OBy-yk-gqe"/>
+                                    <constraint firstAttribute="trailing" secondItem="x3i-3a-jyB" secondAttribute="trailing" id="fsX-KU-YKz"/>
+                                    <constraint firstAttribute="trailing" secondItem="whX-tP-MdL" secondAttribute="trailing" id="vyx-Wm-0dx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x0R-12-MzS" secondAttribute="bottom" id="0SA-Oj-MaA"/>
+                            <constraint firstItem="x0R-12-MzS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RQ5-ZH-nAj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6bq-fF-nzS" secondAttribute="trailing" id="h5w-rM-4Jn"/>
+                            <constraint firstItem="x0R-12-MzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="irn-DG-ENr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6bq-fF-nzS" secondAttribute="bottom" id="nhl-9s-Lef"/>
+                            <constraint firstAttribute="trailing" secondItem="x0R-12-MzS" secondAttribute="trailing" id="txz-Rd-Lht"/>
+                            <constraint firstItem="6bq-fF-nzS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ube-2d-N1v"/>
+                            <constraint firstItem="6bq-fF-nzS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wXe-mm-RaS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="whX-tP-MdL" id="oXH-x5-eYQ"/>
+                        <outlet property="choice2Button" destination="x3i-3a-jyB" id="wN5-xG-4gG"/>
+                        <outlet property="storyLabel" destination="CLe-Da-BTe" id="kPh-5D-Jo0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Дизайн без названия-4" width="1000" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
